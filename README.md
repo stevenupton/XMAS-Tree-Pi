@@ -40,3 +40,5 @@ Guidelines to set the Raspberry pi into headless mode, see [link](https://itsfos
 
 To convert SD card to readonly if plugged into headless interface, see [link](https://core-electronics.com.au/guides/read-only-raspberry-pi/)
 
+Note that if the SD card is in readonly mode the the date will NOT update to the next day. 
+
