@@ -2,12 +2,12 @@
 
 ## File - advent_xmas.py
 
-The Raspberry Pi 3D christmas tree has 25 LEDs. These consist of:
+The [Raspberry Pi 3D Christmas Tree](https://thepihut.com/products/3d-xmas-tree-for-raspberry-pi) has 25 LEDs:
 
-1. 24 red lights
-2. 1 yellow star
+1. 24 red LEDs
+2. 1 yellow star LED
 
-The advent program is quite simple, for each day in december a new red LED light switches on, for example december 1st - 1 LED, 2nd december - 2 LEDs etc...
+The advent program is quite simple, for each day in December a new red LED light switches on, for example December 1st - 1 LED, 2nd December - 2 LEDs etc...
 
 Every 30 seconds the lights will randomly pick different LED lights to switch on. 
 
