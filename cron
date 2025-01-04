@@ -1,0 +1,5 @@
+
+terminal pi@raspberry$> sudo cron -e
+
+#bottom of cron file
+@reboot python3 /home/pi/projects/xmas/advent_xmas.py &
