@@ -30,7 +30,7 @@ Simple script to start a cron job for the python script
 
 At the terminal type to edit the cron:
 
-sudo cron -e
+sudo crontab -e
 
 See link: [Setting up cron jon on the Raspberry Pi](https://bc-robotics.com/tutorials/setting-cron-job-raspberry-pi/?srsltid=AfmBOoorVp697avlYOwwSPL_7PZ07LdZZA2pZR5kvso2rpgExxpGtoop)
 
