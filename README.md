@@ -30,9 +30,34 @@ Simple script to start a cron job for the python script
 
 At the terminal type to edit the cron:
 
-sudo crontab -e
+<span style="color: #4a5bf2ff; font-family: Courier New; ">sudo crontab -e</span>
 
 See link: [Setting up cron jon on the Raspberry Pi](https://bc-robotics.com/tutorials/setting-cron-job-raspberry-pi/?srsltid=AfmBOoorVp697avlYOwwSPL_7PZ07LdZZA2pZR5kvso2rpgExxpGtoop)
+
+## Set timesync with sync to RAM
+
+Running systemd-timesyncd at boot cannot be wrtten to store when the SD card is readonly.
+
+I am running a Raspberry Pi Zero 2 W and when the Raspberry Pi boots it runs time sync to refresh the date/time.
+
+I add a RAM disk to write the time sync state (running SD Card in readonly mode).
+
+Open command window open:
+
+<span style="color: #4a5bf2ff; font-family: Courier New; ">sudo nano /etc/fstab</span>
+
+add the line:
+....
+
+<span style="color: #4a5bf2ff; font-family: Courier New; ">tmpfs /var/lib/systemd/timesync tmpfs nosuid,nodev,noexec,size=1M 0 0</span>
+
+....
+exit and save
+
+Enable time sync by typing:
+
+<span style="color: #4a5bf2ff; font-family: Courier New; ">sudo systemctl enable systemd-timesyncd</span>
+
 
 ## Headless and set SD card readonly
 
